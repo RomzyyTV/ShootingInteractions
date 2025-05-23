@@ -1,15 +1,12 @@
-﻿using Exiled.API.Enums;
-using Exiled.API.Features;
-using Exiled.API.Features.Pickups;
-using ShootingInteractions.Configs;
-using System;
+﻿using System;
 using System.Linq;
 using System.Reflection;
-using PlayerEvent = Exiled.Events.Handlers.Player;
+using LabApi.Features.Wrappers;
+using LabApi.Loader.Features.Plugins;
 
 namespace ShootingInteractions
 {
-    public class Plugin : Plugin<Config>
+    public class P : Plugin
     {
         internal static MethodInfo GetCustomItem = null;
 
